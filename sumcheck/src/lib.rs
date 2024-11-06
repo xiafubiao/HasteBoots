@@ -9,9 +9,9 @@ use prover::{ProverMsg, ProverState};
 use serde::Serialize;
 use std::marker::PhantomData;
 use verifier::SubClaim;
+pub mod error;
 pub mod prover;
 pub mod verifier;
-pub mod error;
 
 /// IP for MLSumcheck   
 pub struct IPForMLSumcheck<F: Field> {
