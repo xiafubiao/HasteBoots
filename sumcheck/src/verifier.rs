@@ -3,7 +3,8 @@
 
 use std::vec;
 
-use algebra::{utils::Transcript, Field, PolynomialInfo};
+use algebra::{utils::Transcript, Field};
+use poly::PolynomialInfo;
 
 use crate::error::Error;
 

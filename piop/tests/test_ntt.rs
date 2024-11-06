@@ -1,17 +1,23 @@
-use algebra::utils::Transcript;
-use algebra::{transformation::AbstractNTT, NTTField, Polynomial};
-use algebra::{BabyBear, BabyBearExetension, DenseMultilinearExtension, Field, NTTPolynomial};
+use algebra::{
+    transformation::AbstractNTT, utils::Transcript, BabyBear, BabyBearExetension, Field, NTTField,
+    NTTPolynomial, Polynomial,
+};
 use num_traits::{One, Zero};
-use pcs::multilinear::BrakedownPCS;
-use pcs::utils::code::{ExpanderCode, ExpanderCodeSpec};
-use piop::ntt::ntt_bare::init_fourier_table;
-use piop::ntt::{BatchNTTInstance, BitsOrder, NTTParams, NTTProof, NTTProver, NTTVerifier};
-use piop::{NTTBareIOP, NTTInstance, NTTIOP};
+use pcs::{
+    multilinear::BrakedownPCS,
+    utils::code::{ExpanderCode, ExpanderCodeSpec},
+};
+use piop::{
+    ntt::{
+        ntt_bare::init_fourier_table, BatchNTTInstance, BitsOrder, NTTParams, NTTProof, NTTProver,
+        NTTVerifier,
+    },
+    NTTBareIOP, NTTInstance, NTTIOP,
+};
+use poly::DenseMultilinearExtension;
 use rand::prelude::*;
 use sha2::Sha256;
-use std::rc::Rc;
-use std::sync::Arc;
-use std::vec;
+use std::{rc::Rc, sync::Arc};
 
 // field type
 type FF = BabyBear;

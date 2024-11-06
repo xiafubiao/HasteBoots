@@ -32,13 +32,11 @@
 use crate::utils::{
     batch_inverse, eval_identity_function, gen_identity_evaluations, verify_oracle_relation,
 };
-use algebra::{
-    utils::Transcript, AbstractExtensionField, AsFrom, DenseMultilinearExtension, Field,
-    ListOfProductsOfPolynomials, PolynomialInfo,
-};
+use algebra::{utils::Transcript, AbstractExtensionField, AsFrom, Field};
 use bincode::Result;
 use core::fmt;
 use pcs::PolynomialCommitmentScheme;
+use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, PolynomialInfo};
 use rayon::{iter::ParallelIterator, slice::ParallelSlice};
 use serde::{Deserialize, Serialize};
 use std::{collections::HashMap, marker::PhantomData, rc::Rc};

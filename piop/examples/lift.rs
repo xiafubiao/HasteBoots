@@ -1,8 +1,7 @@
 use algebra::{
     derive::{DecomposableField, Field},
     utils::Transcript,
-    BabyBear, BabyBearExetension, DenseMultilinearExtension, Field, FieldUniformSampler,
-    SparsePolynomial,
+    BabyBear, BabyBearExetension, Field, FieldUniformSampler,
 };
 use num_traits::{One, Zero};
 use pcs::{
@@ -13,6 +12,7 @@ use piop::{
     lift::{LiftParams, LiftProof, LiftProver, LiftVerifier},
     BitDecompositionInstanceInfo, LiftInstance,
 };
+use poly::{DenseMultilinearExtension, SparsePolynomial};
 use rand_distr::Distribution;
 use sha2::Sha256;
 use std::{rc::Rc, time::Instant};

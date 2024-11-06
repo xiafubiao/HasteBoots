@@ -5,7 +5,7 @@ use std::{collections::HashMap, rc::Rc};
 use rayon::iter::{IndexedParallelIterator, IntoParallelRefIterator, ParallelIterator};
 use serde::{Deserialize, Serialize};
 
-use crate::Field;
+use algebra::Field;
 
 use super::DenseMultilinearExtension;
 

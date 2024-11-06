@@ -1,7 +1,4 @@
-use algebra::{
-    utils::Transcript, BabyBear, BabyBearExetension, Basis, DenseMultilinearExtension, Field,
-    FieldUniformSampler,
-};
+use algebra::{utils::Transcript, BabyBear, BabyBearExetension, Basis, Field, FieldUniformSampler};
 use itertools::izip;
 use pcs::{
     multilinear::brakedown::BrakedownPCS,
@@ -11,6 +8,7 @@ use piop::bit_decomposition::{
     BitDecompositionIOP, BitDecompositionInstance, BitDecompositionParams, BitDecompositionProof,
     BitDecompositionProver, BitDecompositionVerifier,
 };
+use poly::DenseMultilinearExtension;
 use rand::prelude::*;
 use rand_distr::Distribution;
 use sha2::Sha256;

@@ -1,8 +1,6 @@
 use std::time::Duration;
 
-use algebra::{
-    utils::Transcript, BabyBear, BabyBearExetension, DenseMultilinearExtension, FieldUniformSampler,
-};
+use algebra::{utils::Transcript, BabyBear, BabyBearExetension, FieldUniformSampler};
 use criterion::{criterion_group, criterion_main, Criterion};
 use pcs::{
     multilinear::{
@@ -11,6 +9,7 @@ use pcs::{
     utils::code::{ExpanderCode, ExpanderCodeSpec},
     PolynomialCommitmentScheme,
 };
+use poly::DenseMultilinearExtension;
 use rand::Rng;
 use sha2::Sha256;
 

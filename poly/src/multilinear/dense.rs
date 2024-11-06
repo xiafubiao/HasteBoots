@@ -10,7 +10,7 @@ use rand_distr::Distribution;
 use rayon::iter::{IndexedParallelIterator, IntoParallelRefMutIterator, ParallelIterator};
 use serde::Serialize;
 
-use crate::{
+use algebra::{
     AbstractExtensionField, Bits, ConstBounded, DecomposableField, Field, FieldUniformSampler,
     NTTPolynomial, Polynomial,
 };

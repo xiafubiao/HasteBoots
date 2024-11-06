@@ -1,8 +1,9 @@
 //! This module defines some useful utils that may invoked by piop.
 use std::rc::Rc;
 
-use algebra::{AbstractExtensionField, DenseMultilinearExtension, Field, SparsePolynomial};
+use algebra::{AbstractExtensionField, Field};
 use itertools::izip;
+use poly::{DenseMultilinearExtension, SparsePolynomial};
 
 /// Generate MLE of the ideneity function eq(u,x) for x \in \{0, 1\}^dim
 pub fn gen_identity_evaluations<F: Field>(u: &[F]) -> DenseMultilinearExtension<F> {

@@ -9,8 +9,9 @@ pub use data_structure::{
 
 use algebra::{
     utils::{Block, Prg, Transcript},
-    AbstractExtensionField, DenseMultilinearExtension, Field,
+    AbstractExtensionField, Field,
 };
+use poly::DenseMultilinearExtension;
 use itertools::{izip, Itertools};
 use rand::SeedableRng;
 use rayon::prelude::*;

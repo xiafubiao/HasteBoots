@@ -1,11 +1,10 @@
 [package]
-name = "sumcheck"
+name = "poly"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 algebra = { path = "../algebra" }
-poly = { path = "../poly" }
 thiserror = { workspace = true }
 serde = { workspace = true }
 rayon = { workspace = true }

@@ -20,14 +20,12 @@
 //! $\sum_{x \in \{0, 1\}^\log M} \sum_{i = 0}^{l-1} r_i \cdot eq(u, x) \cdot [\prod_{k=0}^B (d_i(x) - k)] = 0$
 //! where r_i (for i = 0..l) are sampled from the verifier.
 use crate::utils::{eval_identity_function, gen_identity_evaluations, verify_oracle_relation};
-use algebra::{
-    utils::Transcript, AbstractExtensionField, DecomposableField, DenseMultilinearExtension, Field,
-    ListOfProductsOfPolynomials, PolynomialInfo,
-};
+use algebra::{utils::Transcript, AbstractExtensionField, DecomposableField, Field};
 use bincode::Result;
 use core::fmt;
 use itertools::izip;
 use pcs::PolynomialCommitmentScheme;
+use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, PolynomialInfo};
 use serde::{Deserialize, Serialize};
 use std::{marker::PhantomData, rc::Rc};
 use sumcheck::{self, verifier::SubClaim, MLSumcheck, ProofWrapper, SumcheckKit};

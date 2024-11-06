@@ -3,9 +3,8 @@
 
 use core::panic;
 
-use algebra::{
-    DenseMultilinearExtension, Field, ListOfProductsOfPolynomials, MultilinearExtension,
-};
+use algebra::Field;
+use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, MultilinearExtension};
 use rayon::iter::{
     IndexedParallelIterator, IntoParallelRefIterator, IntoParallelRefMutIterator, ParallelIterator,
 };

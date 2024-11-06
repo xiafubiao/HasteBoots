@@ -1,6 +1,6 @@
 use std::time::Instant;
 
-use algebra::{utils::Transcript, BabyBear, BabyBearExetension, DenseMultilinearExtension, Field};
+use algebra::{utils::Transcript, BabyBear, BabyBearExetension, Field};
 use num_traits::Zero;
 use pcs::{
     multilinear::BrakedownPCS,
@@ -10,6 +10,7 @@ use piop::{
     lookup::{LookupParams, LookupProof, LookupProver, LookupVerifier},
     LookupInstance,
 };
+use poly::DenseMultilinearExtension;
 use rand::prelude::*;
 use sha2::Sha256;
 

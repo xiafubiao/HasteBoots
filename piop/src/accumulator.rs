@@ -21,13 +21,11 @@ use super::{
 use crate::utils::{
     add_assign_ef, eval_identity_function, gen_identity_evaluations, verify_oracle_relation,
 };
-use algebra::{
-    utils::Transcript, AbstractExtensionField, DenseMultilinearExtension, Field,
-    ListOfProductsOfPolynomials, PolynomialInfo,
-};
+use algebra::{utils::Transcript, AbstractExtensionField, Field};
 use bincode::Result;
 use itertools::{izip, Itertools};
 use pcs::PolynomialCommitmentScheme;
+use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, PolynomialInfo};
 use rayon::{
     iter::{
         IndexedParallelIterator, IntoParallelRefIterator, IntoParallelRefMutIterator,

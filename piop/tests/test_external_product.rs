@@ -1,8 +1,6 @@
 use algebra::utils::Transcript;
 use algebra::{transformation::AbstractNTT, NTTField, Polynomial};
-use algebra::{
-    BabyBear, BabyBearExetension, Basis, DenseMultilinearExtension, Field, FieldUniformSampler,
-};
+use algebra::{BabyBear, BabyBearExetension, Basis, Field, FieldUniformSampler};
 use itertools::izip;
 use num_traits::One;
 use pcs::multilinear::BrakedownPCS;
@@ -15,6 +13,7 @@ use piop::{
     BatchNTTInstanceInfo, BitDecompositionInstanceInfo, ExternalProductInstance, RlweCiphertext,
     RlweCiphertextVector,
 };
+use poly::DenseMultilinearExtension;
 use rand_distr::Distribution;
 use sha2::Sha256;
 use std::sync::Arc;

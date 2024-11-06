@@ -1,6 +1,6 @@
 use algebra::{
-    transformation::AbstractNTT, utils::Transcript, BabyBear, BabyBearExetension,
-    DenseMultilinearExtension, Field, NTTField, Polynomial,
+    transformation::AbstractNTT, utils::Transcript, BabyBear, BabyBearExetension, Field, NTTField,
+    Polynomial,
 };
 use num_traits::One;
 use pcs::{
@@ -8,6 +8,7 @@ use pcs::{
     utils::code::{ExpanderCode, ExpanderCodeSpec},
 };
 use piop::ntt::{BatchNTTInstance, BitsOrder, NTTParams, NTTProof, NTTProver, NTTVerifier};
+use poly::DenseMultilinearExtension;
 use rand::prelude::*;
 use sha2::Sha256;
 use std::{rc::Rc, sync::Arc, time::Instant};

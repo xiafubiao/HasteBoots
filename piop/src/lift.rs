@@ -32,14 +32,14 @@ use super::{
 use crate::utils::{
     eval_identity_function, gen_identity_evaluations, gen_sparse_at_u, verify_oracle_relation,
 };
-use algebra::{
-    utils::Transcript, AbstractExtensionField, DecomposableField, DenseMultilinearExtension, Field,
-    ListOfProductsOfPolynomials, PolynomialInfo, SparsePolynomial,
-};
+use algebra::{utils::Transcript, AbstractExtensionField, DecomposableField, Field};
 use bincode::Result;
 use core::fmt;
 use itertools::izip;
 use pcs::PolynomialCommitmentScheme;
+use poly::{
+    DenseMultilinearExtension, ListOfProductsOfPolynomials, PolynomialInfo, SparsePolynomial,
+};
 use serde::{Deserialize, Serialize};
 use std::{marker::PhantomData, rc::Rc};
 use sumcheck::{self, verifier::SubClaim, MLSumcheck, ProofWrapper, SumcheckKit};

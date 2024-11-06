@@ -1,6 +1,7 @@
 use std::slice::{Iter, IterMut};
 
-use crate::{AbstractExtensionField, DenseMultilinearExtension, Field};
+use crate::DenseMultilinearExtension;
+use algebra::{AbstractExtensionField, Field};
 
 /// Sparse polynomial
 #[derive(Clone, Default, PartialEq, Eq)]

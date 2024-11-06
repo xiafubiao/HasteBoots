@@ -31,13 +31,11 @@
 //!       + \tilde{\beta}((x, b),(z,1)) * \tilde{A}_{F}^{(k-1)}(z) ( (1-u_{i})+u_{i} * \tilde{ω}^{(k)}_{i+1}(z, 1) * ω^{2^k}
 
 use crate::utils::{eval_identity_function, gen_identity_evaluations, verify_oracle_relation};
-use algebra::{
-    utils::Transcript, AbstractExtensionField, DenseMultilinearExtension, Field,
-    ListOfProductsOfPolynomials, PolynomialInfo,
-};
+use algebra::{utils::Transcript, AbstractExtensionField, Field};
 use core::fmt;
 use itertools::izip;
 use pcs::PolynomialCommitmentScheme;
+use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, PolynomialInfo};
 use serde::{Deserialize, Serialize};
 use std::{marker::PhantomData, rc::Rc, sync::Arc};
 use sumcheck::{
@@ -1493,9 +1491,10 @@ mod test {
     use crate::ntt::{eval_w_power_times_x, naive_w_power_times_x_table, BitsOrder};
     use algebra::{
         derive::{DecomposableField, FheField, Field, Prime, NTT},
-        DenseMultilinearExtension, FieldUniformSampler, NTTField,
+        FieldUniformSampler, NTTField,
     };
     use num_traits::{One, Zero};
+    use poly::DenseMultilinearExtension;
     use rand::thread_rng;
     use rand_distr::Distribution;
 

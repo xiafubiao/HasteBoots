@@ -1,7 +1,7 @@
 use algebra::{
     derive::{DecomposableField, Field, Prime},
     utils::Transcript,
-    BabyBear, BabyBearExetension, Basis, DenseMultilinearExtension, Field, FieldUniformSampler,
+    BabyBear, BabyBearExetension, Basis, Field, FieldUniformSampler,
 };
 use num_traits::{One, Zero};
 use pcs::{
@@ -14,6 +14,7 @@ use piop::{
     },
     AdditionInZqIOP, AdditionInZqInstance, BitDecompositionInstanceInfo,
 };
+use poly::DenseMultilinearExtension;
 use rand::prelude::*;
 use rand_distr::Distribution;
 use sha2::Sha256;

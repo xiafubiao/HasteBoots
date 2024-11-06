@@ -34,14 +34,12 @@ use crate::utils::{
     add_assign_ef, eval_identity_function, gen_identity_evaluations, verify_oracle_relation,
 };
 use crate::LookupIOP;
-use algebra::{
-    utils::Transcript, AbstractExtensionField, DenseMultilinearExtension, Field,
-    ListOfProductsOfPolynomials, PolynomialInfo,
-};
+use algebra::{utils::Transcript, AbstractExtensionField, Field};
 use bincode::Result;
 use core::fmt;
 use itertools::izip;
 use pcs::PolynomialCommitmentScheme;
+use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, PolynomialInfo};
 use serde::{Deserialize, Serialize};
 use std::{marker::PhantomData, rc::Rc, sync::Arc};
 use sumcheck::{self, verifier::SubClaim, MLSumcheck, ProofWrapper, SumcheckKit};

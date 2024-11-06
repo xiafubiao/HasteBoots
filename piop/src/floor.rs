@@ -21,14 +21,12 @@ use super::{
     BitDecompositionInstanceInfo,
 };
 use crate::utils::{eval_identity_function, gen_identity_evaluations, verify_oracle_relation};
-use algebra::{
-    utils::Transcript, AbstractExtensionField, DecomposableField, DenseMultilinearExtension, Field,
-    ListOfProductsOfPolynomials, PolynomialInfo,
-};
+use algebra::{utils::Transcript, AbstractExtensionField, DecomposableField, Field};
 use bincode::Result;
 use core::fmt;
 use itertools::izip;
 use pcs::PolynomialCommitmentScheme;
+use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, PolynomialInfo};
 use serde::{Deserialize, Serialize};
 use std::{marker::PhantomData, rc::Rc};
 use sumcheck::{self, verifier::SubClaim, MLSumcheck, ProofWrapper, SumcheckKit};

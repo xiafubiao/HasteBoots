@@ -1,7 +1,7 @@
 use algebra::{
     derive::{DecomposableField, Field, Prime},
     utils::Transcript,
-    BabyBear, BabyBearExetension, DenseMultilinearExtension, Field,
+    BabyBear, BabyBearExetension, Field,
 };
 use num_traits::Zero;
 use pcs::{
@@ -12,6 +12,7 @@ use piop::{
     lookup::{LookupParams, LookupProof, LookupProver, LookupVerifier},
     LookupIOP, LookupInstance,
 };
+use poly::DenseMultilinearExtension;
 use rand::prelude::*;
 use sha2::Sha256;
 use std::rc::Rc;

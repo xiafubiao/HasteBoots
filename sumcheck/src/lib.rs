@@ -4,7 +4,8 @@
 //! Interactive Proof Protocol used for Multilinear Sumcheck
 // It is derived from https://github.com/arkworks-rs/sumcheck/blob/master/src/ml_sumcheck/protocol/mod.rs.
 
-use algebra::{utils::Transcript, Field, ListOfProductsOfPolynomials, PolynomialInfo};
+use algebra::{utils::Transcript, Field};
+use poly::{ListOfProductsOfPolynomials, PolynomialInfo};
 use prover::{ProverMsg, ProverState};
 use serde::Serialize;
 use std::marker::PhantomData;

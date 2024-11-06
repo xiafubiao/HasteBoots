@@ -1,6 +1,6 @@
 use std::{rc::Rc, time::Instant};
 
-use algebra::{utils::Transcript, BabyBear, BabyBearExetension, DenseMultilinearExtension, Field};
+use algebra::{utils::Transcript, BabyBear, BabyBearExetension, Field};
 use pcs::{
     multilinear::BrakedownPCS,
     utils::code::{ExpanderCode, ExpanderCodeSpec},
@@ -9,6 +9,7 @@ use piop::{
     AdditionInZqInstance, AdditionInZqParams, AdditionInZqProof, AdditionInZqProver,
     AdditionInZqVerifier, BitDecompositionInstanceInfo,
 };
+use poly::DenseMultilinearExtension;
 use rand::{thread_rng, Rng};
 use sha2::Sha256;
 

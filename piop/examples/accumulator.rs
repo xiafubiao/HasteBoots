@@ -1,22 +1,23 @@
 use algebra::{
-    transformation::AbstractNTT, utils::Transcript, BabyBear, BabyBearExetension, Basis,
-    DenseMultilinearExtension, Field, MultilinearExtension, NTTField, NTTPolynomial, Polynomial,
+    transformation::AbstractNTT, utils::Transcript, BabyBear, BabyBearExetension, Basis, Field,
+    NTTField, NTTPolynomial, Polynomial,
 };
 use itertools::izip;
 use num_traits::One;
-use pcs::multilinear::BrakedownPCS;
-use pcs::utils::code::{ExpanderCode, ExpanderCodeSpec};
+use pcs::{
+    multilinear::BrakedownPCS,
+    utils::code::{ExpanderCode, ExpanderCodeSpec},
+};
 use piop::{
     accumulator::{AccumulatorParams, AccumulatorProof, AccumulatorProver, AccumulatorVerifier},
     ntt::BitsOrder,
     AccumulatorInstance, AccumulatorWitness, BatchNTTInstanceInfo, BitDecompositionInstanceInfo,
     ExternalProductInstance, RlweCiphertext, RlweCiphertextVector,
 };
+use poly::{DenseMultilinearExtension, MultilinearExtension};
 use rand::prelude::*;
 use sha2::Sha256;
-use std::sync::Arc;
-use std::time::Instant;
-use std::vec;
+use std::{sync::Arc, time::Instant};
 
 // # Parameters
 // n = 1024: denotes the dimension of LWE

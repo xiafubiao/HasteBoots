@@ -1,8 +1,7 @@
 use algebra::{
     derive::{DecomposableField, Field},
     utils::Transcript,
-    AsFrom, BabyBear, BabyBearExetension, Basis, DecomposableField, DenseMultilinearExtension,
-    Field, FieldUniformSampler,
+    AsFrom, BabyBear, BabyBearExetension, Basis, DecomposableField, Field, FieldUniformSampler,
 };
 use itertools::izip;
 use pcs::{
@@ -13,6 +12,7 @@ use piop::bit_decomposition::{
     BitDecompositionParams, BitDecompositionProof, BitDecompositionProver, BitDecompositionVerifier,
 };
 use piop::BitDecompositionInstance;
+use poly::DenseMultilinearExtension;
 use rand::prelude::*;
 use rand_distr::Distribution;
 use sha2::Sha256;

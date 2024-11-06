@@ -1,13 +1,10 @@
-use algebra::{
-    utils::Transcript, BabyBear, DenseMultilinearExtension, Field, FieldUniformSampler,
-    ListOfProductsOfPolynomials, MultilinearExtension,
-};
+use algebra::{utils::Transcript, BabyBear, Field, FieldUniformSampler};
+use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, MultilinearExtension};
 use rand::prelude::*;
 use rand_distr::Distribution;
 use serde::Serialize;
 use std::rc::Rc;
-use sumcheck::IPForMLSumcheck;
-use sumcheck::MLSumcheck;
+use sumcheck::{IPForMLSumcheck, MLSumcheck};
 
 // field type
 type FF = BabyBear;

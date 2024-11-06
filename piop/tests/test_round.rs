@@ -1,7 +1,4 @@
-use algebra::{
-    utils::Transcript, BabyBear, BabyBearExetension, DenseMultilinearExtension, Field,
-    FieldUniformSampler,
-};
+use algebra::{utils::Transcript, BabyBear, BabyBearExetension, Field, FieldUniformSampler};
 use pcs::{
     multilinear::BrakedownPCS,
     utils::code::{ExpanderCode, ExpanderCodeSpec},
@@ -10,10 +7,10 @@ use piop::{
     round::{RoundParams, RoundProof, RoundProver, RoundVerifier},
     BitDecompositionInstanceInfo, RoundIOP, RoundInstance,
 };
+use poly::DenseMultilinearExtension;
 use rand_distr::Distribution;
 use sha2::Sha256;
 use std::rc::Rc;
-use std::vec;
 
 type FF = BabyBear; // field type
 type EF = BabyBearExetension;

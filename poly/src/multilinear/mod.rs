@@ -4,7 +4,7 @@ use std::ops::{Add, AddAssign, Index, Neg, Sub, SubAssign};
 
 use num_traits::Zero;
 
-use crate::Field;
+use algebra::Field;
 
 mod dense;
 mod sparse;
