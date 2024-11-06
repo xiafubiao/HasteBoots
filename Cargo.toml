@@ -1,11 +1,6 @@
 [workspace]
 
-members = [
-    "algebra",
-    "algebra_derive",
-    "pcs",
-    "zkp",
-]
+members = ["algebra", "algebra_derive", "pcs", "sumcheck", "zkp"]
 
 resolver = "2"
 
