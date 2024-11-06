@@ -1,4 +1,5 @@
-use algebra::{utils::Transcript, BabyBear, Field, FieldUniformSampler};
+use algebra::{BabyBear, Field, FieldUniformSampler};
+use helper::Transcript;
 use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, MultilinearExtension};
 use rand::prelude::*;
 use rand_distr::Distribution;

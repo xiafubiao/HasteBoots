@@ -1,7 +1,8 @@
 use algebra::{
-    transformation::AbstractNTT, utils::Transcript, BabyBear, BabyBearExetension, Field, NTTField,
-    NTTPolynomial, Polynomial,
+    transformation::AbstractNTT, BabyBear, BabyBearExetension, Field, NTTField, NTTPolynomial,
+    Polynomial,
 };
+use helper::Transcript;
 use num_traits::{One, Zero};
 use pcs::{
     multilinear::BrakedownPCS,

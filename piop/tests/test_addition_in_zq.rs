@@ -1,8 +1,8 @@
 use algebra::{
     derive::{DecomposableField, Field, Prime},
-    utils::Transcript,
     BabyBear, BabyBearExetension, Basis, Field, FieldUniformSampler,
 };
+use helper::Transcript;
 use num_traits::{One, Zero};
 use pcs::{
     multilinear::BrakedownPCS,
@@ -19,7 +19,6 @@ use rand::prelude::*;
 use rand_distr::Distribution;
 use sha2::Sha256;
 use std::rc::Rc;
-use std::vec;
 #[derive(Field, DecomposableField, Prime)]
 #[modulus = 59]
 pub struct Fq(u32);

@@ -32,9 +32,10 @@
 use crate::utils::{
     batch_inverse, eval_identity_function, gen_identity_evaluations, verify_oracle_relation,
 };
-use algebra::{utils::Transcript, AbstractExtensionField, AsFrom, Field};
+use algebra::{AbstractExtensionField, AsFrom, Field};
 use bincode::Result;
 use core::fmt;
+use helper::Transcript;
 use pcs::PolynomialCommitmentScheme;
 use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, PolynomialInfo};
 use rayon::{iter::ParallelIterator, slice::ParallelSlice};

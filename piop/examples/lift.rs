@@ -1,8 +1,8 @@
 use algebra::{
     derive::{DecomposableField, Field},
-    utils::Transcript,
     BabyBear, BabyBearExetension, Field, FieldUniformSampler,
 };
+use helper::Transcript;
 use num_traits::{One, Zero};
 use pcs::{
     multilinear::BrakedownPCS,

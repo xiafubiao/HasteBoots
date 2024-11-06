@@ -1,4 +1,5 @@
-use algebra::{utils::Transcript, BabyBear, BabyBearExetension, Field, FieldUniformSampler};
+use algebra::{BabyBear, BabyBearExetension, Field, FieldUniformSampler};
+use helper::Transcript;
 use pcs::{
     multilinear::BrakedownPCS,
     utils::code::{ExpanderCode, ExpanderCodeSpec},

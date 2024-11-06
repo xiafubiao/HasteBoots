@@ -8,7 +8,8 @@ pub mod multilinear;
 /// utils, mainly used to implement linear time encodable code now
 pub mod utils;
 
-use algebra::{utils::Transcript, AbstractExtensionField, Field};
+use algebra::{AbstractExtensionField, Field};
+use helper::Transcript;
 use poly::MultilinearExtension;
 use serde::{Deserialize, Serialize};
 

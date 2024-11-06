@@ -1,23 +1,25 @@
-use algebra::utils::Transcript;
-use algebra::{transformation::AbstractNTT, NTTField, NTTPolynomial, Polynomial};
-use algebra::{BabyBear, BabyBearExetension, Basis, Field};
+use algebra::{
+    transformation::AbstractNTT, BabyBear, BabyBearExetension, Basis, Field, NTTField,
+    NTTPolynomial, Polynomial,
+};
+use helper::Transcript;
 use itertools::izip;
 use num_traits::One;
-use pcs::multilinear::BrakedownPCS;
-use pcs::utils::code::{ExpanderCode, ExpanderCodeSpec};
-use piop::accumulator::{
-    AccumulatorParams, AccumulatorProof, AccumulatorProver, AccumulatorVerifier,
+use pcs::{
+    multilinear::BrakedownPCS,
+    utils::code::{ExpanderCode, ExpanderCodeSpec},
 };
-use piop::ntt::BitsOrder;
+
 use piop::{
-    AccumulatorInstance, AccumulatorWitness, BatchNTTInstanceInfo, BitDecompositionInstanceInfo,
+    ntt::BitsOrder, AccumulatorInstance, AccumulatorParams, AccumulatorProof, AccumulatorProver,
+    AccumulatorVerifier, AccumulatorWitness, BatchNTTInstanceInfo, BitDecompositionInstanceInfo,
     ExternalProductInstance, RlweCiphertext, RlweCiphertextVector,
 };
+
 use poly::{DenseMultilinearExtension, MultilinearExtension};
 use rand::thread_rng;
 use sha2::Sha256;
 use std::sync::Arc;
-use std::vec;
 
 // field type
 type FF = BabyBear;

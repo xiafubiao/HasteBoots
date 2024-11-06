@@ -1,4 +1,5 @@
-use algebra::{utils::Transcript, BabyBear, BabyBearExetension, Field, FieldUniformSampler};
+use algebra::{BabyBear, BabyBearExetension, Field, FieldUniformSampler};
+use helper::Transcript;
 use pcs::{
     multilinear::BrakedownPCS,
     utils::code::{ExpanderCode, ExpanderCodeSpec},
@@ -11,7 +12,6 @@ use poly::DenseMultilinearExtension;
 use rand_distr::Distribution;
 use sha2::Sha256;
 use std::rc::Rc;
-use std::vec;
 
 type FF = BabyBear; // field type
 type EF = BabyBearExetension;

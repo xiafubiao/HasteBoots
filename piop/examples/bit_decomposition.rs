@@ -1,8 +1,8 @@
 use algebra::{
     derive::{DecomposableField, Field},
-    utils::Transcript,
     AsFrom, BabyBear, BabyBearExetension, Basis, DecomposableField, Field, FieldUniformSampler,
 };
+use helper::Transcript;
 use itertools::izip;
 use pcs::{
     multilinear::BrakedownPCS,

@@ -1,7 +1,8 @@
 use algebra::{
-    transformation::AbstractNTT, utils::Transcript, BabyBear, BabyBearExetension, Basis, Field,
-    FieldUniformSampler, NTTField, Polynomial,
+    transformation::AbstractNTT, BabyBear, BabyBearExetension, Basis, Field, FieldUniformSampler,
+    NTTField, Polynomial,
 };
+use helper::Transcript;
 use itertools::izip;
 use num_traits::One;
 use pcs::{

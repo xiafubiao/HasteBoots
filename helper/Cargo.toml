@@ -1,0 +1,11 @@
+[package]
+name = "helper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+algebra = { path = "../algebra" }
+merlin = { workspace = true }
+bincode = { workspace = true }
+serde = { workspace = true }
+rand = { workspace = true }

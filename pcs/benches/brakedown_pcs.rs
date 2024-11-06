@@ -1,7 +1,8 @@
 use std::time::Duration;
 
-use algebra::{utils::Transcript, BabyBear, BabyBearExetension, FieldUniformSampler};
+use algebra::{BabyBear, BabyBearExetension, FieldUniformSampler};
 use criterion::{criterion_group, criterion_main, Criterion};
+use helper::Transcript;
 use pcs::{
     multilinear::{
         BrakedownCommitmentState, BrakedownOpenProof, BrakedownPCS, BrakedownPolyCommitment,

@@ -31,8 +31,9 @@
 //!       + \tilde{\beta}((x, b),(z,1)) * \tilde{A}_{F}^{(k-1)}(z) ( (1-u_{i})+u_{i} * \tilde{ω}^{(k)}_{i+1}(z, 1) * ω^{2^k}
 
 use crate::utils::{eval_identity_function, gen_identity_evaluations, verify_oracle_relation};
-use algebra::{utils::Transcript, AbstractExtensionField, Field};
+use algebra::{AbstractExtensionField, Field};
 use core::fmt;
+use helper::Transcript;
 use itertools::izip;
 use pcs::PolynomialCommitmentScheme;
 use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, PolynomialInfo};

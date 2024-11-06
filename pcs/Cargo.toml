@@ -8,6 +8,8 @@ edition = "2021"
 [dependencies]
 algebra = { path = "../algebra" }
 poly = { path = "../poly" }
+helper = { path = "../helper" }
+
 
 
 thiserror = { workspace = true }

@@ -1,6 +1,7 @@
 use std::{rc::Rc, time::Instant};
 
-use algebra::{utils::Transcript, BabyBear, BabyBearExetension, Field};
+use algebra::{BabyBear, BabyBearExetension, Field};
+use helper::Transcript;
 use pcs::{
     multilinear::BrakedownPCS,
     utils::code::{ExpanderCode, ExpanderCodeSpec},

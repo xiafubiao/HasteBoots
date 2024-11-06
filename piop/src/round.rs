@@ -4,9 +4,10 @@ use super::{
     BitDecompositionInstanceInfo,
 };
 use crate::utils::{eval_identity_function, gen_identity_evaluations, verify_oracle_relation};
-use algebra::{utils::Transcript, AbstractExtensionField, DecomposableField, Field};
+use algebra::{AbstractExtensionField, DecomposableField, Field};
 use bincode::Result;
 use core::fmt;
+use helper::Transcript;
 use itertools::izip;
 use pcs::PolynomialCommitmentScheme;
 use poly::{DenseMultilinearExtension, ListOfProductsOfPolynomials, PolynomialInfo};

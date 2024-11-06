@@ -1,4 +1,5 @@
-use algebra::{utils::Transcript, BabyBear, BabyBearExetension, Basis, Field, FieldUniformSampler};
+use algebra::{BabyBear, BabyBearExetension, Basis, Field, FieldUniformSampler};
+use helper::Transcript;
 use itertools::izip;
 use pcs::{
     multilinear::brakedown::BrakedownPCS,

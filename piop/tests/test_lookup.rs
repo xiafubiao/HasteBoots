@@ -1,8 +1,8 @@
 use algebra::{
     derive::{DecomposableField, Field, Prime},
-    utils::Transcript,
     BabyBear, BabyBearExetension, Field,
 };
+use helper::Transcript;
 use num_traits::Zero;
 use pcs::{
     multilinear::BrakedownPCS,
@@ -16,7 +16,6 @@ use poly::DenseMultilinearExtension;
 use rand::prelude::*;
 use sha2::Sha256;
 use std::rc::Rc;
-use std::vec;
 
 type FF = BabyBear;
 type EF = BabyBearExetension;

@@ -1,6 +1,7 @@
 use std::time::Instant;
 
-use algebra::{utils::Transcript, BabyBear, BabyBearExetension, Field};
+use algebra::{BabyBear, BabyBearExetension, Field};
+use helper::Transcript;
 use num_traits::Zero;
 use pcs::{
     multilinear::BrakedownPCS,
