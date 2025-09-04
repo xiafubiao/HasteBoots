@@ -16,6 +16,18 @@ Note the library has about 33K lines of Rust code. It includes PIOPs for all ato
 - `poly`: Polynomial data structures and operations
 - `sumcheck`: Implementation of the sum-check protocol
 
+# Setup and Testing
+
+Note the implementation requires rust version >= 1.80.0
+
+To run the code testing, simply follow the steps: 
+```
+git clone ...
+cd HasteBoots
+cargo build --release
+```
+Once the library is compiled successfully, you can run `cargo test` for the functionality testing, and you can run `cargo bench` for the performance testing. Note you can check the ***tables*** in the original paper for the scheme performance details.
+
 # Parameter Configuration
 ## FHE Parameters
 
@@ -41,6 +53,3 @@ Note the library has about 33K lines of Rust code. It includes PIOPs for all ato
 - **𝑟**: 1.9 (adjusts the code rate)
 - **Recursion Stopping Threshold**: 10 (optimizes performance)
 
-# Performance
-
-You can check the tables in the original paper for the scheme performance.
