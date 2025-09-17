@@ -99,7 +99,7 @@ fn main() -> Result<(), algebra::AlgebraError> {
 
     // through NTT, you can comput polynomial multiplication
     type PolyFF = Polynomial<FF>;
-    const N: usize = 8;
+    const N: usize = 32;
     let a = PolyFF::random(N, &mut rng);
     let b = PolyFF::random(N, &mut rng);
 
